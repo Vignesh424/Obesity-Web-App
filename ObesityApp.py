@@ -35,11 +35,12 @@ def run():
         print(features)
         prediction = model.predict(features)
         weight = [str(i) for i in prediction]
-        ans = str(weight)
+        ans = ', '.join(weight)
         if ans == 0:
-            st.error('Error')
+            st.error("Error in the Inputs: Please Try Again")
+
         else:
-            st.success(str(ans))
+            st.success("The predicted Category is:"+" "+ans)
             
 
 run()
