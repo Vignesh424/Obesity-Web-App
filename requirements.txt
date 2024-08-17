@@ -4,3 +4,4 @@ streamlit
 unicorn
 numpy
 pandas
+disutils
